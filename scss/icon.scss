@@ -1,0 +1,42 @@
+//
+// @author      OA Wu <comdan66@gmail.com>
+// @copyright   Copyright (c) 2015 - 2024, Ginkgo
+// @license     http://opensource.org/licenses/MIT  MIT License
+// @link        https://www.ioa.tw/
+//
+
+@import "compass/css3/font-face";
+
+@include font-face("icon", font-files(
+  "icomoon/fonts/icomoon.eot",
+  "icomoon/fonts/icomoon.woff",
+  "icomoon/fonts/icomoon.ttf",
+  "icomoon/fonts/icomoon.svg"));
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-line:before { content: "\e904"; }
+.icon-menu:before { content: "\e907"; }
+.icon-search:before { content: "\e920"; }
+.icon-x:before { content: "\e909"; }
+.icon-home:before { content: "\e90a"; }
+.icon-social-facebook:before { content: "\e905"; }
+.icon-mail_outline:before { content: "\e90b"; }
+.icon-add:before { content: "\e90c"; }
+.icon-remove:before { content: "\e90d"; }
+.icon-access_time:before { content: "\e906"; }
+.icon-keyboard_arrow_down:before { content: "\e900"; }
+.icon-keyboard_arrow_left:before { content: "\e901"; }
+.icon-keyboard_arrow_right:before { content: "\e902"; }
+.icon-keyboard_arrow_up:before { content: "\e903"; }
+.icon-first_page:before { content: "\e908"; }
+.icon-date_range:before { content: "\e90f"; }
+.icon-link:before { content: "\e913"; }
+.icon-phone:before { content: "\e90e"; }

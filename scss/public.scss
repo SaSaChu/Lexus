@@ -1,0 +1,102 @@
+@import "Ginkgo";
+@import "bootstrap/bootstrap";
+
+@charset "utf-8";
+
+// @font-face {
+//   font-family: 'nbk';
+//   src: url('/font/nobk-webfont.eot');
+//   src: url('/font/nobk-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('/font/nobk-webfont.woff') format('woff'),
+//        url('/font/nobk-webfont.ttf') format('truetype'),
+//        url('/font/nobk-webfont.svg#nobel-bookregular') format('svg');
+// }
+
+* {
+  &, &:after, &:before {
+    vertical-align: middle;
+    @include box-sizing(border-box);
+    @include font-smoothing(subpixel-antialiased);
+  }
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: #000;
+  
+  font-family: 'nbk', 'Noto Sans TC', 'Roboto', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+
+  text-size-adjust: none;
+  -webkit-text-size-adjust:none;
+
+  background-color: white;
+}
+
+a {
+  text-decoration: none !important;
+
+  &:after, &:before {
+    vertical-align: top !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  outline: 0;
+  border-width: 0;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 485px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.topboxs {
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  background-image: url(../images/doll-bg.png);
+  background-repeat: repeat;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+

@@ -1,0 +1,38 @@
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1682944636') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1682944636') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1682944636') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1682944636') format('svg'); }
+*[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
+
+.icon-line:before { content: "\e904"; }
+
+.icon-menu:before { content: "\e907"; }
+
+.icon-search:before { content: "\e920"; }
+
+.icon-x:before { content: "\e909"; }
+
+.icon-home:before { content: "\e90a"; }
+
+.icon-social-facebook:before { content: "\e905"; }
+
+.icon-mail_outline:before { content: "\e90b"; }
+
+.icon-add:before { content: "\e90c"; }
+
+.icon-remove:before { content: "\e90d"; }
+
+.icon-access_time:before { content: "\e906"; }
+
+.icon-keyboard_arrow_down:before { content: "\e900"; }
+
+.icon-keyboard_arrow_left:before { content: "\e901"; }
+
+.icon-keyboard_arrow_right:before { content: "\e902"; }
+
+.icon-keyboard_arrow_up:before { content: "\e903"; }
+
+.icon-first_page:before { content: "\e908"; }
+
+.icon-date_range:before { content: "\e90f"; }
+
+.icon-link:before { content: "\e913"; }
+
+.icon-phone:before { content: "\e90e"; }

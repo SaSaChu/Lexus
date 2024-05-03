@@ -54,6 +54,10 @@ $main-blue: #017eff;
   }
 }
 
+.ztop {
+  z-index: 1050 !important;
+}
+
 html {
   font-size: 13px;
 }
@@ -194,6 +198,34 @@ hr {
   box-shadow: 0 0 0 0rem rgba(1, 126, 255, 0.25) !important;
 }
 
+.modal-header {
+  border-bottom: 0 !important;
+}
+
+.form-control:focus {
+  // color: #212529;
+  // background-color: #fff;
+  border-color: #ced4da !important;
+  // outline: 0;
+  box-shadow: 0 0 0 0rem rgba(1, 126, 255, 0.25) !important;
+}
+
+.offcanvas-top {
+  top: 665px;
+  @include range-width(0, 770px) {
+    top: 155px;
+  }
+}
+
+// .modal-backdrop {
+//   &.searchUse {
+//     top: 665px;
+//     @include range-width(0, 770px) {
+//       top: 155px;
+//     }
+//   }
+// }
+
 
 
 // boxs
@@ -206,6 +238,13 @@ hr {
 }
 
 .navboxs {
+  display: inline-block;
+  width: 100%;
+  background-image: url(../images/doll-bg.png);
+  background-repeat: repeat;
+}
+
+.memberBoxsTitle {
   display: inline-block;
   width: 100%;
   background-image: url(../images/doll-bg.png);
@@ -283,12 +322,25 @@ hr {
   background-size: cover;
 }
 
+.noteBoxs {
+  display: inline-block;
+  width: 100%;
+  background-color: $gray-500;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+}
+
 
 
 // font
 .f13 {
   color: $gray-500;
   font-size: 1rem;
+}
+
+.f9 {
+  font-size: .9rem;
 }
 
 .cupon-text {
@@ -308,6 +360,22 @@ hr {
   border: 1px solid $gray-500;
 }
 
+.searchText {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: black;
+
+  &:before {
+    display: inline-block;
+    vertical-align: top;
+    content: '';
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin-right: 5px;
+  }
+}
 
 
 // link

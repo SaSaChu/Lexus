@@ -22,7 +22,22 @@
   </head>
 
   <body>
-    <header>a</header>
+    <header>
+      <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-4">
+            <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/" class="social-font h-arrow">
+              <i class="bi bi-chevron-left "></i>
+            </a>
+          </div>
+          <div class="col-4 text-center"><img src="images/logo.svg" class="logoboxs"></div>
+          <div class="col-4">
+            <a href="" class="float-end"><img src="images/icon-qa.svg"  class="h-iconboxs"></a>
+            <a href="" class="float-end me-3"><img src="images/icon-member.svg"  class="h-iconboxs"></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <div class="swiper mySwiper mobile-close">
       <div class="swiper-wrapper">
@@ -36,13 +51,26 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <div class="topboxs py-4">
+    <div class="mobile-open w-100">
+      <div class="mobile-header">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col"><h3 class="text-white mb-0">LEXUS尊榮回饋 優惠介紹</h3></div>
+            <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topboxs py-4 mobile-close">
       <div class="mainboxs container-fluid">
         <div class="row mx-auto align-items-center">
           <div class="col">
-            <h1 class="mb-0">Lexus尊榮回饋 優惠介紹</h1>
+            <h1 class="mb-0">LEXUS尊榮回饋 優惠介紹</h1>
           </div>
-          <div class="col-auto"><i class="bi bi-search"></i></div>
+          <div class="col-auto">
+            <a><img src="images/search-icon.svg"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -68,37 +96,237 @@
 
           <div class="container-fluid px-lg-0 px-3">
             <div class="row">
-              <div class="col-sm-4 mb-lg-0 mb-4">
+              <!-- 01 -->
+              <div class="col-sm-4 mb-4">
                 <div class="card">
-                  <img src="images/pic01.png" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">Oh my!原燒</span>
+                    </div>
+                    <img src="images/pic01.png" class="card-img-top">
                   </div>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-lg-0 mb-4">
-                <div class="card">
-                  <img src="images/pic02.png" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-lg-0 mb-4">
-                <div class="card">
-                  <img src="images/pic01.png" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="col-12 mx-auto">
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- 02 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                    </div>
+                    <img src="images/pic02.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+                    <div class="mb-2">
+                      <!-- 標籤不要超過五個 -->
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 03 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                    </div>
+                    <img src="images/pic03.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 04 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">Oh my!原燒</span>
+                    </div>
+                    <img src="images/pic01.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 05 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                    </div>
+                    <img src="images/pic02.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+                    <div class="mb-2">
+                      <!-- 標籤不要超過五個 -->
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 06 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                    </div>
+                    <img src="images/pic03.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 07 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">Oh my!原燒</span>
+                    </div>
+                    <img src="images/pic01.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 08 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                    </div>
+                    <img src="images/pic02.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+                    <div class="mb-2">
+                      <!-- 標籤不要超過五個 -->
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text me-2">標籤二</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 09 -->
+              <div class="col-sm-4 mb-4">
+                <div class="card">
+                  <div class="position-relative">
+                    <div class="position-absolute flagBoxs">限量</div>
+                    <div class="position-absolute bottom-0 start-0 titleboxs">
+                      <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                    </div>
+                    <img src="images/pic03.png" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text mb-0">優惠品項：</p>
+                    <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+                    <div class="mb-2">
+                      <span class="badge label-text me-2">標籤一</span>
+                      <span class="badge label-text">標籤二</span>
+                    </div>
+                    <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙</p>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-black">詳細資訊</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 text-center">
+                <button class="btn moreBtn" type="submit">更多優惠</button>
               </div>
             </div>
           </div>
@@ -107,19 +335,9 @@
         <!-- 02 list -->
         <div class="tab-pane fade" id="my-ticket" role="tabpanel" aria-labelledby="my-ticket-tab">456</div>
       </div>
-
-      <!-- <div class="tagboxs test-bg">小tag的地方</div>
-
-      <div class="container-fluid">
-        <div class="row mx-auto">
-          
-        </div>
-        <button class="moreBtn btn">更多資訊</button>
-      </div> -->
-
     </main>
     
-    <footer class="my-4">
+    <footer class="my-5">
       <hr class="my-4">
       <div class="container-fluid">
         <div class="row align-items-center">

@@ -1,6 +1,6 @@
 $(function () {
 
-	// $('.newpic, .esspic').imgLiquid ();
+  $('.modus-img').imgLiquid ();
 
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

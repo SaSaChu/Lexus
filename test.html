@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-tag {
+      width: 100%;
+      height: 55px;
+    }
+
+    .swiper-slide-tag {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-wrapper-tag {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+      box-sizing: content-box;
+    }
+
+    .swiper-button-next-tag, .swiper-button-prev-tag {
+        position: absolute;
+        top: var(--swiper-navigation-top-offset, 50%);
+        width: calc(var(--swiper-navigation-size) / 44* 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+
+
+    @media (max-width: 760px) {
+      .swiper-button-next-tag {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .swiper-button-prev-tag {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }
+
+    .test-bg {
+        background-color: rgba(0, 128, 0, 0.2);
+      }
+
+    .test-border {
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-tag test-border">
+    <div class="swiper-wrapper-tag">
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+      <div class="swiper-slide-tag">Resize me!</div>
+    </div>
+    <div class="swiper-button-next-tag"></div>
+    <div class="swiper-button-prev-tag"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-tag', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next-tag',
+        prevEl: '.swiper-button-prev-tag',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
+</body>
+
+</html>

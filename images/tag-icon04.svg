@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>群組copy</title>
+    <defs>
+        <path d="M19.844441,0 C20.2715518,0 20.646915,0.211412365 20.7642514,0.518056249 L21.9331285,3.5727701 C22.1458698,4.12874288 21.8341794,4.73999476 21.2369484,4.93803938 C21.1132974,4.97904266 20.9830079,5 20.8517462,5 L1.14794102,5 C0.513950699,5 0,4.5215543 0,3.93136161 C0,3.80916775 0.0225125606,3.68787904 0.0665586543,3.5727701 L1.23543576,0.518056249 C1.35277218,0.211412365 1.7281354,0 2.15524622,0 L19.844441,0 Z" id="path-1"></path>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="列表頁面" transform="translate(-294, -761)">
+            <g id="群組copy" transform="translate(294, 761)">
+                <g id="群組" transform="translate(2, 9)" stroke="#262F38" stroke-linejoin="round" stroke-width="1.25">
+                    <path d="M0,0 L0,7.21827124 C0,7.65000812 0.402943725,8 0.9,8 L17.1,8 C17.5970563,8 18,7.65000812 18,7.21827124 L18,0" id="路徑"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="路徑"></g>
+                    <path d="M2.15524622,0 L19.844441,0 C20.2715518,0 20.646915,0.211412365 20.7642514,0.518056249 L21.9331285,3.5727701 C22.1458698,4.12874288 21.8341794,4.73999476 21.2369484,4.93803938 C21.1132974,4.97904266 20.9830079,5 20.8517462,5 L1.14794102,5 C0.513950699,5 0,4.5215543 0,3.93136161 C0,3.80916775 0.0225125606,3.68787904 0.0665586543,3.5727701 L1.23543576,0.518056249 L1.23543576,0.518056249 C1.35277218,0.211412365 1.7281354,0 2.15524622,0 Z" id="路徑" stroke="#262F38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                </g>
+                <g id="群組" transform="translate(1, 5)" stroke="#262F38" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
+                    <path d="M6,0 L6,1.33333334 C6,2.80609266 4.65685425,4 3,4 C1.34314575,4 0,2.80609266 0,1.33333334 L0,0" id="路徑"></path>
+                </g>
+                <g id="群組" transform="translate(8, 5)" stroke="#262F38" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
+                    <path d="M6,0 L6,1.33333334 C6,2.80609266 4.65685425,4 3,4 C1.34314575,4 0,2.80609266 0,1.33333334 L0,0" id="路徑"></path>
+                </g>
+                <g id="群組" transform="translate(15, 5)" stroke="#262F38" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
+                    <path d="M6,0 L6,1.33333334 C6,2.80609266 4.65685425,4 3,4 C1.34314575,4 0,2.80609266 0,1.33333334 L0,0" id="路徑"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

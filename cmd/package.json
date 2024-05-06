@@ -23,7 +23,7 @@
   "dependencies": {
     "adm-zip": "^0.4.13",
     "aws-sdk": "^2.515.0",
-    "bootstrap-icons": "^1.10.5",
+    "bootstrap-icons": "^1.11.3",
     "cheerio": "^1.0.0-rc.3",
     "chokidar": "^3.0.2",
     "command-exists": "^1.2.8",

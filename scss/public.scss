@@ -176,6 +176,10 @@ hr {
   &:hover {
     opacity: 1 !important;
   }
+
+  &.swiper-button-next-tag, .swiper-button-prev-tag {
+    font-size: 20px !important;
+  }
 }
 
 // 小頁籤
@@ -223,12 +227,12 @@ hr {
 @media (max-width: 760px) {
   .swiper-button-next-tag {
     right: 20px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
   }
 
   .swiper-button-prev-tag {
     left: 20px;
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
   }
 }
 

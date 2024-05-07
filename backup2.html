@@ -28,7 +28,7 @@
         <div class="row justify-content-between align-items-center">
           <div class="col-4">
             <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/" class="social-font h-arrow">
-              <i class="bi bi-chevron-left "></i>
+              <i class="bi bi-chevron-left"></i>
             </a>
           </div>
           <div class="col-4 text-center"><img src="images/logo.svg" class="logoboxs"></div>
@@ -58,7 +58,7 @@
       <div class="mobile-header">
         <div class="container-fluid">
           <div class="row align-items-center">
-            <div class="col"><h3 class="text-white mb-0">Elite 菁英卡 ( ANY-8500 )<br>您好：</h3></div>
+            <div class="col"><h3 class="text-white mb-0">LEXUS尊榮回饋 優惠介紹</h3></div>
             <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
           </div>
         </div>
@@ -70,7 +70,7 @@
       <div class="mainboxs container-fluid px-0">
         <div class="row mx-auto align-items-center">
           <div class="col px-0">
-            <h1 class="mb-0">Elite 菁英卡 ( ANY-8500 )，您好：</h1>
+            <h1 class="mb-0">LEXUS尊榮回饋 優惠介紹</h1>
           </div>
           <div class="col-auto">
             <a><img src="images/search-icon.svg"></a>
@@ -4757,10 +4757,7 @@
       </div>
     </div>
     
-    
 
-
-    
     <footer class="my-5">
       <hr class="my-4">
       <div class="container-fluid">
@@ -4785,27 +4782,46 @@
       </div>
     </footer>
 
+
     <!-- 登入光箱 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header memberBoxsTitle text-center">
-            <h5 class="modal-title" id="exampleModalLabel">我的尊榮回饋</h5>
+            <h5 class="modal-title" id="exampleModalLabel">查詢我的尊榮回饋</h5>
             <img src="images/decorate.svg">
           </div>
 
           <div class="modal-body m-3">
-            <h3>親愛(ANY-8500)車主，您好：</h3>
-            <p class="fs-5 mb-5 pb-5">
-              目前您已登入尊榮回饋系統，若您想使用其他車牌登入查詢優惠，請按下『登出』按鈕，若否則請按下『取消』。
-            </p>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label fs-5">登入</label>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">請輸入車牌號碼：</label>
+              </div>
+              <figcaption class="mt-2 text-black-50">* 車牌號碼需填寫完整，包含「-」。</figcaption>
+            </div>
+
+            <div class="mb-3">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">身份證字號後 5 碼 ：</label>
+              </div>
+              <figcaption class="mt-2 text-black-50">* 身份證號碼請填寫「登錄於 Lexus 系統之車輛使用人」資訊。</figcaption>
+            </div>
+
+            <div class="noteBoxs mt-2 mb-4">
+              若您是不只擁有一台Lexus的車主，建議可以將每個車牌都登入一次，會有不同的優惠劵可以使用喔！
+            </div>
+
             <div class="container-fluid overflow-hidden px-0">
               <div class="row gx-2">
                 <div class="col-6">
                   <button type="button" class="w-100 btn btn-black" data-bs-dismiss="modal">取 消</button>
                 </div>
                 <div class="col-6">
-                  <a href='index.html' type="button" class="w-100 btn btn-black">登 出</a> 
+                  <a href="index-login.html" class="w-100 btn btn-black">登 入</a>
+                  <!-- <button type="button" class="w-100 btn btn-black">登 入</button> -->
                 </div>
               </div>
             </div>
@@ -4813,11 +4829,11 @@
         </div>
       </div>
     </div>
-
+    <!-- 0507 swiper 移至 public.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> 
   </body>
 </html>
 

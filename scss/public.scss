@@ -173,14 +173,34 @@ hr {
   color: white !important;
   opacity: .5 !important;
 
+  &:after {
+    font-size: 44px;
+  }
+
+  &.swiper-button-next-tag {
+    right: 0 !important;
+
+    &:after {
+      font-size: 20px !important;
+    }
+  }
+
+  &.swiper-button-prev-tag {
+    left: 0 !important;
+
+    &:after {
+      font-size: 20px !important;
+    }
+  }
+
   &:hover {
     opacity: 1 !important;
   }
 
-  &.swiper-button-next-tag, .swiper-button-prev-tag {
-    font-size: 20px !important;
-  }
+  
 }
+
+
 
 // 小頁籤
 .swiper-tag {
@@ -308,8 +328,21 @@ hr {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/></svg>') !important;
 }
 
+
 .nav-link {
   &.tag-link {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.15rem !important;
+    color: #989898 !important;
+    background-color: transparent !important;
+
+    &.active {
+      color: black !important;
+    }
+  }
+
+  &.tag-link-login {
     cursor: pointer;
     text-align: center;
     font-size: 1.15rem !important;
@@ -317,7 +350,7 @@ hr {
     background-color: white !important;
 
     &.active {
-      color: black !important;
+      color: $main-blue !important;
     }
   }
 }
@@ -334,6 +367,8 @@ hr {
 .modal-footer {
   border-top: 0 !important;
 }
+
+
 
 
 

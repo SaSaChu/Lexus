@@ -3048,8 +3048,12 @@ hr { color: #adb5bd; opacity: 1; }
 .swiper-pagination-bullet-active { background: #017eff !important; }
 
 .swiper-button-next, .swiper-button-prev { color: white !important; opacity: .5 !important; }
+.swiper-button-next:after, .swiper-button-prev:after { font-size: 44px; }
+.swiper-button-next.swiper-button-next-tag, .swiper-button-prev.swiper-button-next-tag { right: 0 !important; }
+.swiper-button-next.swiper-button-next-tag:after, .swiper-button-prev.swiper-button-next-tag:after { font-size: 20px !important; }
+.swiper-button-next.swiper-button-prev-tag, .swiper-button-prev.swiper-button-prev-tag { left: 0 !important; }
+.swiper-button-next.swiper-button-prev-tag:after, .swiper-button-prev.swiper-button-prev-tag:after { font-size: 20px !important; }
 .swiper-button-next:hover, .swiper-button-prev:hover { opacity: 1 !important; }
-.swiper-button-next.swiper-button-next-tag, .swiper-button-next .swiper-button-prev-tag, .swiper-button-prev.swiper-button-next-tag, .swiper-button-prev .swiper-button-prev-tag { font-size: 20px !important; }
 
 .swiper-tag { width: 100%; height: 55px; }
 
@@ -3086,8 +3090,10 @@ hr { color: #adb5bd; opacity: 1; }
 
 .accordion-button:not(.collapsed)::after { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/></svg>') !important; }
 
-.nav-link.tag-link { cursor: pointer; text-align: center; font-size: 1.15rem !important; color: #989898 !important; background-color: white !important; }
+.nav-link.tag-link { cursor: pointer; text-align: center; font-size: 1.15rem !important; color: #989898 !important; background-color: transparent !important; }
 .nav-link.tag-link.active { color: black !important; }
+.nav-link.tag-link-login { cursor: pointer; text-align: center; font-size: 1.15rem !important; color: #989898 !important; background-color: white !important; }
+.nav-link.tag-link-login.active { color: #017eff !important; }
 
 @media screen and (max-width: 769px) and (min-width: 0) { .card.modus-mobile { position: relative; flex-direction: row !important; } }
 

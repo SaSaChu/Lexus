@@ -1,148 +1,50 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-  <head>
-    <meta http-equiv="Content-Language" content="zh-tw">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-
-    <title>LEXUS 車主尊榮回饋</title>
-
-    <link rel="shortcut icon" href="/images/favicon.ico">
-
-    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/banner.js"></script>
-    <script language="javascript" type="text/javascript" src="js/public.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <script src="https://kit.fontawesome.com/25b2931f6f.js" crossorigin="anonymous"></script>
-
-  </head>
-
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-4">
-            <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/" class="social-font h-arrow">
-              <i class="bi bi-chevron-left"></i>
-            </a>
-          </div>
-          <div class="col-4 text-center"><img src="images/logo.svg" class="logoboxs"></div>
-          <div class="col-4">
-            <a href="qa.html" class="float-end"><img src="images/icon-qa.svg"  class="h-iconboxs"></a>
-            <a href="" class="float-end me-3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/icon-member.svg"  class="h-iconboxs"></a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- banner -->
-    <div class="swiper mySwiper mobile-close">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/banner.png"></div>
-        <div class="swiper-slide"><img src="images/banner02.png"></div>
-        <div class="swiper-slide"><img src="images/banner03.png"></div>
-        <div class="swiper-slide"><img src="images/banner04.png"></div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- mobile topBoxs -->
-    <div class="mobile-open w-100">
-      <div class="mobile-header">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col"><h3 class="text-white mb-0">LEXUS尊榮回饋 優惠介紹</h3></div>
-            <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- web topBoxs -->
-    <div class="topboxs py-4 mobile-close">
-      <div class="mainboxs container-fluid px-0">
-        <div class="row mx-auto align-items-center">
-          <div class="col px-0">
-            <h1 class="mb-0">LEXUS尊榮回饋 優惠介紹</h1>
-          </div>
-          <div class="col-auto">
-            <a><img src="images/search-icon.svg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="navboxs pt-4">
-      <div class="mainboxs">
-        <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link ticket-nav active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#ticket-list" type="button" role="tab" aria-controls="ticket-list" aria-selected="true">優惠禮遇</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="index-login.html" class="nav-link ticket-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">我的優惠</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="mainboxs">
-      <div class="tab-content" id="pills-tabContent">
-        <!-- 01 list 優惠禮遇 -->
-        <div class="tab-pane fade show active" id="ticket-list" role="tabpanel" aria-labelledby="ticket-list-tab">
-          <div class="my-4 fs-4 swiper swiper-tag">
-            <!-- 01 list類別 -->
-            <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
-              <!-- 010 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag01-tab" data-bs-toggle="pill" data-bs-target="#tag01" role="tab" aria-controls="tag01" aria-selected="true">
-                <i class="fa-solid fa-store d-block fs-4"></i>全部
-              </button>
-              <!-- 011 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag02-tab" data-bs-toggle="pill" data-bs-target="#tag02" role="tab" aria-controls="tag02" aria-selected="false">
-                <i class="fa-solid fa-martini-glass-empty d-block fs-4"></i>渡假休閒
-              </button>
-              <!-- 012 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag03-tab" data-bs-toggle="pill" data-bs-target="#tag03" role="tab" aria-controls="tag03" aria-selected="false">
-                <i class="fa-solid fa-tree-city d-block fs-4"></i>類別項目01
-              </button>
-              <!-- 013 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag04-tab" data-bs-toggle="pill" data-bs-target="#tag04" role="tab" aria-controls="tag04" aria-selected="false">
-                <i class="fa-solid fa-umbrella-beach d-block fs-4"></i>類別項目02
-              </button>
-              <!-- 014 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag05-tab" data-bs-toggle="pill" data-bs-target="#tag05" role="tab" aria-controls="tag05" aria-selected="false">
-                <i class="fa-solid fa-shapes d-block fs-4"></i>類別項目03
-              </button>
-              <!-- 015 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag06-tab" data-bs-toggle="pill" data-bs-target="#tag06" role="tab" aria-controls="tag06" aria-selected="false">
-                <i class="fa-solid fa-person-biking d-block fs-4"></i>類別項目04
-              </button>
-              <!-- 016 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag07-tab" data-bs-toggle="pill" data-bs-target="#tag07" role="tab" aria-controls="tag07" aria-selected="false">
-                <i class="fa-solid fa-kitchen-set d-block fs-4"></i>類別項目05
-              </button>
-              <!-- 017 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag08-tab" data-bs-toggle="pill" data-bs-target="#tag08" role="tab" aria-controls="tag08" aria-selected="false">
-                <i class="fa-solid fa-gifts d-block fs-4"></i>類別項目06
-              </button>
-              <!-- 018 -->
-              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag09-tab" data-bs-toggle="pill" data-bs-target="#tag09" role="tab" aria-controls="tag09" aria-selected="false">
-                <i class="fa-regular fa-gem d-block fs-4"></i>類別項目07
-              </button>
-            </div>
-            <div class="swiper-button-prev swiper-button-prev-tag"></div>
-            <div class="swiper-button-next swiper-button-next-tag"></div>
+<!-- 02 list 我的優惠 -->
+        <div class="tab-pane fade" id="my-ticket" role="tabpanel" aria-labelledby="my-ticket-tab">
+          <div class="my-4 fs-4">
+            <!-- 02 list類別 -->
+            <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+              <!-- 020 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tag20" role="tab" aria-controls="tag20" aria-selected="true"><i class="fa-solid fa-store d-block fs-4"></i>II全部</div>
+              </li>
+              <!-- 021 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tag21" role="tab" aria-controls="tag21" aria-selected="false"><i class="fa-solid fa-martini-glass-empty d-block fs-4"></i>II渡假休閒</div>
+              </li>
+              <!-- 022 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag22" role="tab" aria-controls="tag22" aria-selected="false"><i class="fa-solid fa-tree-city d-block fs-4"></i>II別項目01</div>
+              </li>
+              <!-- 023 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag23" role="tab" aria-controls="tag23" aria-selected="false"><i class="fa-solid fa-umbrella-beach d-block fs-4"></i>II別項目02</div>
+              </li>
+              <!-- 024 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag24" role="tab" aria-controls="tag24" aria-selected="false"><i class="fa-solid fa-shapes d-block fs-4"></i>II別項目03</div>
+              </li>
+              <!-- 025 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag25" role="tab" aria-controls="tag25" aria-selected="false"><i class="fa-solid fa-person-biking d-block fs-4"></i>II別項目04</div>
+              </li>
+              <!-- 026 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag26" role="tab" aria-controls="tag26" aria-selected="false"><i class="fa-solid fa-kitchen-set d-block fs-4"></i>II別項目05</div>
+              </li>
+              <!-- 027 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag27" role="tab" aria-controls="tag27" aria-selected="false"><i class="fa-solid fa-gifts d-block fs-4"></i>II別項目06</div>
+              </li>
+              <!-- 028 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tag28" role="tab" aria-controls="tag28" aria-selected="false"><i class="fa-regular fa-gem d-block fs-4"></i>II別項目07</div>
+              </li>
+            </ul>
           </div>
 
           <div class="tab-content" id="pills-tabContent">
-            <!-- 010 -->
-            <div class="tab-pane fade show active" id="tag01" role="tabpanel" aria-labelledby="tag01-tab">
+            <!-- 020 -->
+            <div class="tab-pane fade show active" id="tag20" role="tabpanel" aria-labelledby="tag20-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -495,8 +397,8 @@
                 </div>
               </div>
             </div>
-            <!-- 011 -->
-            <div class="tab-pane fade" id="tag02" role="tabpanel" aria-labelledby="tag02-tab">
+            <!-- 021 -->
+            <div class="tab-pane fade" id="tag21" role="tabpanel" aria-labelledby="tag21-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -505,7 +407,7 @@
                       <div class="position-relative">
                         <div class="position-absolute flagBoxs">限量</div>
                         <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">2 Oh my!原燒</span>
+                          <span class="title-text">Oh my!原燒</span>
                         </div>
                         <img src="images/pic01.png" class="card-img-top">
                       </div>
@@ -675,799 +577,6 @@
 
                         <p class="card-text cupon-text">
                           內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="col-12 text-center">
-                    <button class="btn moreBtn" type="submit">更多優惠</button>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <!-- 012 -->
-            <div class="tab-pane fade" id="tag03" role="tabpanel" aria-labelledby="tag03-tab">
-              <div class="container-fluid px-lg-0 px-3">
-                <div class="row">
-                  <!-- 01 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">3 Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 02 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 03 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 04 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="col-12 text-center">
-                    <button class="btn moreBtn" type="submit">更多優惠</button>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <!-- 013 -->
-            <div class="tab-pane fade" id="tag04" role="tabpanel" aria-labelledby="tag04-tab">
-              <div class="container-fluid px-lg-0 px-3">
-                <div class="row">
-                  <!-- 01 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">4 Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 02 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 03 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 04 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 05 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 06 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 07 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-                        
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="col-12 text-center">
-                    <button class="btn moreBtn" type="submit">更多優惠</button>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <!-- 014 -->
-            <div class="tab-pane fade" id="tag05" role="tabpanel" aria-labelledby="tag05-tab">
-              <div class="container-fluid px-lg-0 px-3">
-                <div class="row">
-                  <!-- 01 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">5Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 02 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 03 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 04 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 05 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 06 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
-                        </p>
-                        
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 07 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">Oh my!原燒</span>
-                        </div>
-                        <img src="images/pic01.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-                        
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 08 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                        </div>
-                        <img src="images/pic02.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
-
-                        <div class="mb-2">
-                          <!-- 標籤不要超過五個 -->
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text me-2">標籤二</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
-                        </p>
-
-                        <div class="f9 mb-3 text-black-50">
-                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
-                        </div>
-
-                        <div class="container-fluid overflow-hidden px-0">
-                          <div class="row gx-2">
-                            <div class="col-12">
-                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 09 -->
-                  <div class="col-sm-4 mb-4">
-                    <div class="card">
-                      <div class="position-relative">
-                        <div class="position-absolute flagBoxs">限量</div>
-                        <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                        </div>
-                        <img src="images/pic03.png" class="card-img-top">
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text mb-0">優惠品項：</p>
-                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
-
-                        <div class="mb-2">
-                          <span class="badge label-text me-2">標籤一</span>
-                          <span class="badge label-text">標籤二</span>
-                        </div>
-                        <p class="card-text cupon-text">
-                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
                         </p>
 
                         <div class="f9 mb-3 text-black-50">
@@ -1491,8 +600,8 @@
                 </div>
               </div>
             </div>
-            <!-- 015 -->
-            <div class="tab-pane fade" id="tag06" role="tabpanel" aria-labelledby="tag06-tab">
+            <!-- 022 -->
+            <div class="tab-pane fade" id="tag22" role="tabpanel" aria-labelledby="tag22-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -1501,7 +610,7 @@
                       <div class="position-relative">
                         <div class="position-absolute flagBoxs">限量</div>
                         <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">6Oh my!原燒</span>
+                          <span class="title-text">Oh my!原燒</span>
                         </div>
                         <img src="images/pic01.png" class="card-img-top">
                       </div>
@@ -1647,14 +756,14 @@
                     </div>
                   </div>
 
-                  <!-- <div class="col-12 text-center">
+                  <div class="col-12 text-center">
                     <button class="btn moreBtn" type="submit">更多優惠</button>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- 016 -->
-            <div class="tab-pane fade" id="tag07" role="tabpanel" aria-labelledby="tag07-tab">
+            <!-- 023 -->
+            <div class="tab-pane fade" id="tag23" role="tabpanel" aria-labelledby="tag23-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -1663,7 +772,284 @@
                       <div class="position-relative">
                         <div class="position-absolute flagBoxs">限量</div>
                         <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">7Oh my!原燒</span>
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 06 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 07 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+                        
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 024 -->
+            <div class="tab-pane fade" id="tag24" role="tabpanel" aria-labelledby="tag24-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
                         </div>
                         <img src="images/pic01.png" class="card-img-top">
                       </div>
@@ -2007,8 +1393,8 @@
                 </div>
               </div>
             </div>
-            <!-- 017 -->
-            <div class="tab-pane fade" id="tag08" role="tabpanel" aria-labelledby="tag08-tab">
+            <!-- 025 -->
+            <div class="tab-pane fade" id="tag25" role="tabpanel" aria-labelledby="tag25-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -2017,7 +1403,523 @@
                       <div class="position-relative">
                         <div class="position-absolute flagBoxs">限量</div>
                         <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">8Oh my!原燒</span>
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 026 -->
+            <div class="tab-pane fade" id="tag26" role="tabpanel" aria-labelledby="tag26-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 06 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+                        
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 07 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
+                        </div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                        內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+                        
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 08 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">孤單又燦爛的神—鬼怪</span>
+                        </div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+
+                        <div class="mb-2">
+                          <!-- 標籤不要超過五個 -->
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text me-2">標籤二</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 09 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
+                        </div>
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">優惠品項：</p>
+                        <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+
+                        <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div>
+                        <p class="card-text cupon-text">
+                          內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 027 -->
+            <div class="tab-pane fade" id="tag27" role="tabpanel" aria-labelledby="tag27-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <div class="position-absolute bottom-0 start-0 titleboxs">
+                          <span class="title-text">Oh my!原燒</span>
                         </div>
                         <img src="images/pic01.png" class="card-img-top">
                       </div>
@@ -2126,14 +2028,14 @@
                     </div>
                   </div>
 
-                  <!-- <div class="col-12 text-center">
+                  <div class="col-12 text-center">
                     <button class="btn moreBtn" type="submit">更多優惠</button>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- 018 -->
-            <div class="tab-pane fade" id="tag09" role="tabpanel" aria-labelledby="tag09-tab">
+            <!-- 028 -->
+            <div class="tab-pane fade" id="tag28" role="tabpanel" aria-labelledby="tag28-tab">
               <div class="container-fluid px-lg-0 px-3">
                 <div class="row">
                   <!-- 01 -->
@@ -2142,7 +2044,7 @@
                       <div class="position-relative">
                         <div class="position-absolute flagBoxs">限量</div>
                         <div class="position-absolute bottom-0 start-0 titleboxs">
-                          <span class="title-text">9Oh my!原燒</span>
+                          <span class="title-text">Oh my!原燒</span>
                         </div>
                         <img src="images/pic01.png" class="card-img-top">
                       </div>
@@ -2374,91 +2276,3 @@
             </div>
           </div>
         </div>
-
-        <!-- 02 list 我的優惠 -->
-        <div class="tab-pane fade" id="my-ticket" role="tabpanel" aria-labelledby="my-ticket-tab"></div>
-      </div>
-    </div>
-
-
-
-
-    <footer class="my-5">
-      <hr class="my-4">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-12 text-lg-start text-center">
-            <a href="https://www.instagram.com/lexus_taiwan/?hl=zh-tw" class="social-font me-3" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/lexus.tw?ref=ts&fref=ts" class="social-font me-3" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.youtube.com/user/LEXUSTaiwanchannel" class="social-font" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-          <div class="col-lg-6 col-12 text-lg-end text-center my-lg-0 my-4">
-            <a href="https://discoverlexus.com/" class="footerlink" target="_blank">全球LEXUS</a>
-            <a href="https://www.lexus.com.tw/privacy.aspx" class="footerlink" target="_blank">隱私權條款</a>
-          </div>
-          <div class="col-12 text-lg-end text-center f13">© HOTAI MOTOR CO.,LTD. ALL RIGHTS RESERVED.   和泰汽車股份有限公司 03251108</div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- 登入光箱 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header memberBoxsTitle text-center">
-            <h5 class="modal-title" id="exampleModalLabel">查詢我的尊榮回饋</h5>
-            <img src="images/decorate.svg">
-          </div>
-
-          <div class="modal-body m-3">
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label fs-5">登入</label>
-              <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">請輸入車牌號碼：</label>
-              </div>
-              <figcaption class="mt-2 text-black-50">* 車牌號碼需填寫完整，包含「-」。</figcaption>
-            </div>
-
-            <div class="mb-3">
-              <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">身份證字號後 5 碼 ：</label>
-              </div>
-              <figcaption class="mt-2 text-black-50">* 身份證號碼請填寫「登錄於 Lexus 系統之車輛使用人」資訊。</figcaption>
-            </div>
-
-            <div class="noteBoxs mt-2 mb-4">
-              若您是不只擁有一台Lexus的車主，建議可以將每個車牌都登入一次，會有不同的優惠劵可以使用喔！
-            </div>
-
-            <div class="container-fluid overflow-hidden px-0">
-              <div class="row gx-2">
-                <div class="col-6">
-                  <button type="button" class="w-100 btn btn-black" data-bs-dismiss="modal">取 消</button>
-                </div>
-                <div class="col-6">
-                  <a href="index-login.html" class="w-100 btn btn-black">登 入</a>
-                  <!-- <button type="button" class="w-100 btn btn-black">登 入</button> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 0507 swiper 移至 public.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-    crossorigin="anonymous"></script> 
-  </body>
-</html>
-

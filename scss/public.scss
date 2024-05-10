@@ -397,6 +397,11 @@ hr {
 
 .mainboxs {
   width: 100%;
+  // max-width: 990px;
+  margin: 0 auto;
+}
+
+.w990 {
   max-width: 990px;
   margin: 0 auto;
 }
@@ -686,6 +691,17 @@ hr {
   }
 }
 
+.modus-img-my {
+  width: 100%;
+  height: 165px;
+
+  @include range-width(0, 770px) {
+    display: inline-block !important;
+    width: 100%;
+    height: 165px;
+  }
+}
+
 .blackBar {
   display: inline-block;
   width: 3px;
@@ -697,6 +713,15 @@ hr {
   height: 95px;
   font-size: 3rem;
   text-align: center;
+}
+
+.h40 {
+  height: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 input[type=number]::-webkit-outer-spin-button,

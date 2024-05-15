@@ -60,7 +60,7 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col"><h3 class="text-white mb-0">LEXUS尊榮回饋 優惠介紹</h3></div>
-            <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
+            <div class="col-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
           </div>
         </div>
       </div>
@@ -73,12 +73,73 @@
           <div class="col px-0">
             <h1 class="mb-0">LEXUS尊榮回饋 優惠介紹</h1>
           </div>
-          <div class="col-auto">
+          <div class="col-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
             <a><img src="images/search-icon.svg"></a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- 搜尋 -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header w990-d">
+        <div id="offcanvasTopLabel" class="search-type">進階搜尋</div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body w990-d">
+        <div class="row align-items-end">
+          <div class="col-xl-4 col-12">
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">區域：</label>
+              <div class="col-sm-9">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>請選擇</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">類型：</label>
+              <div class="col-sm-9">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>請選擇</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12">
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">品牌：</label>
+              <div class="col-sm-9">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>請選擇</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">關鍵字：</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="請輸入關鍵字">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12">
+             <a href="#" class="w-100 btn btn-black mb-3">詳細資訊</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <div class="navboxs pt-4">
       <div class="mainboxs w990">

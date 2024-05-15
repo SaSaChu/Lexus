@@ -290,9 +290,28 @@ hr {
 }
 
 .offcanvas-top {
-  top: 665px;
-  @include range-width(0, 770px) {
-    top: 155px;
+  height: 16vh !important;
+  // top: 665px;
+
+  @include range-width(935px, 1200px) {
+    height: 30vh !important;
+  }
+
+  @include range-width(770px, 935px) {
+    height: 65vh !important;
+  }
+
+  @include range-width(415px, 770px) {
+    height: 50vh !important;
+  }
+
+  @include range-width(375px, 415px) {
+    height: 50vh !important;
+  }
+
+  @include range-width(0, 375px) {
+    // top: 155px;
+    height: 65vh !important;
   }
 }
 
@@ -402,6 +421,12 @@ hr {
 }
 
 .w990 {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.w990-d {
+  width: 100%;
   max-width: 990px;
   margin: 0 auto;
 }
@@ -595,6 +620,22 @@ hr {
     font-weight: bold;
     vertical-align: top !important;
     color: black;
+  }
+}
+
+.search-type {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    vertical-align: bottom;
+    margin-right: 10px;
   }
 }
 

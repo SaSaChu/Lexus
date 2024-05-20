@@ -3113,6 +3113,8 @@ hr { color: #adb5bd; opacity: 1; }
 
 .w990 { max-width: 990px; margin: 0 auto; }
 
+@media screen and (max-width: 379px) and (min-width: 0) { .w240 { max-width: 240px; } }
+
 .w990-d { width: 100%; max-width: 990px; margin: 0 auto; }
 
 .iteam-imgboxs01 { display: inline-block; width: 100%; height: 160px; }

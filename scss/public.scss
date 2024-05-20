@@ -425,6 +425,14 @@ hr {
   margin: 0 auto;
 }
 
+.w240 {
+
+  @include range-width(0, 380px) {
+    max-width: 240px;
+  }
+
+}
+
 .w990-d {
   width: 100%;
   max-width: 990px;

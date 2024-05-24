@@ -315,6 +315,10 @@ hr {
   }
 }
 
+.offcanvas-body {
+  overflow-y: unset !important;
+}
+
 .accordion-item {
   border: 0 !important;
 }

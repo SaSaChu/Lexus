@@ -3081,6 +3081,8 @@ hr { color: #adb5bd; opacity: 1; }
 @media screen and (max-width: 414px) and (min-width: 375px) { .offcanvas-top { height: 50vh !important; } }
 @media screen and (max-width: 374px) and (min-width: 0) { .offcanvas-top { height: 65vh !important; } }
 
+.offcanvas-body { overflow-y: unset !important; }
+
 .accordion-item { border: 0 !important; }
 
 .accordion-header { border-top: 1px solid #e9ecef; }

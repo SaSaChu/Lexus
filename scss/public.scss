@@ -357,6 +357,8 @@ hr {
 
 
 .nav-link {
+  padding: 0.5rem .8rem !important;
+
   &.tag-link {
     cursor: pointer;
     text-align: center;
@@ -687,7 +689,7 @@ hr {
     display: inline-block;
     content: '';
     width: 3px;
-    height: 20px;
+    height: 26px;
     background-color: black;
     vertical-align: bottom;
     margin-right: 10px;

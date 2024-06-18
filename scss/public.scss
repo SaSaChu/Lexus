@@ -59,7 +59,7 @@ $main-blue: #017eff;
 }
 
 html {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 body {
@@ -72,13 +72,13 @@ body {
   padding: 0;
   color: #000;
 
-  font:normal 14px/20px "新細明體";
+  // font: normal 14px/20px "新細明體";
   font-family:"nbk", "microsoft yahei","微軟正黑體",arial,sans-serif;
   font-family:"nbk", "微軟正黑體",arial,sans-serif;
+  line-height: 26px;
 
   text-size-adjust: none;
   -webkit-text-size-adjust:none;
-
   background-color: white;
 }
 
@@ -259,6 +259,10 @@ hr {
 
 
 // bo
+.card-text {
+  font-size: 1.25rem
+}
+
 .ticket-nav {
   font-size: 1.2rem !important;
   color: black !important;
@@ -356,7 +360,7 @@ hr {
   &.tag-link {
     cursor: pointer;
     text-align: center;
-    font-size: 1.15rem !important;
+    font-size: 1.1rem !important;
     color: #989898 !important;
     background-color: transparent !important;
 
@@ -368,7 +372,7 @@ hr {
   &.tag-link-login {
     cursor: pointer;
     text-align: center;
-    font-size: 1.15rem !important;
+    font-size: 1.1rem !important;
     color: #989898 !important;
     background-color: white !important;
 
@@ -396,6 +400,14 @@ hr {
 
 
 // boxs
+.card-s {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 14px;
+}
+
 .topboxs {
   display: inline-block;
   position:relative;
@@ -556,9 +568,26 @@ hr {
 
 
 // font
+.used-type {
+  display: inline-block;
+  border: 3px solid rgba(255, 255, 255, 1);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+
+  @include range-width(0, 1200px) {
+    width: 80%;
+    border: 2px solid white;
+    padding: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 .f13 {
   color: $gray-500;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .f16 {
@@ -570,14 +599,20 @@ hr {
   font-size: .9rem;
 }
 
+.used {
+  display: inline-block;
+  color: #989898;
+}
+
 .cupon-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1rem;
-  height: 60px;
+  font-size: 1.1rem;
+  height: 42px;
+  line-height: 20px;
 }
 
 .label-text {
@@ -605,7 +640,7 @@ hr {
 }
 
 .limitTitle {
-  background-color: $main-blue;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 10px;
@@ -632,7 +667,7 @@ hr {
 
 .modus-text-red {
   color: red;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   &:before {
     display: inline-block;
@@ -686,7 +721,7 @@ hr {
 }
 
 .footerlink {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: $gray-800;
 
   &:after {
@@ -714,6 +749,14 @@ hr {
 
 
 // btn
+.btn {
+  padding: 0.375rem 0 !important;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem !important;
+  }
+}
+
 .moreBtn {
   font-size: 1.1rem;
   padding: 8px 20px;
@@ -742,6 +785,10 @@ hr {
 
 
 // other
+.opa50 {
+  opacity: .4;
+}
+
 .modus-img {
   width: 100%;
   height: 165px;
@@ -766,7 +813,7 @@ hr {
 .blackBar {
   display: inline-block;
   width: 3px;
-  height: 45px;
+  height: 55px;
   background-color: black;
 }
 
@@ -794,18 +841,6 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
-
-
-// 寫完刪除
-.test-bg {
-  background-color: rgba(0, 128, 0, 0.2);
-}
-
-.test-border {
-  border: 1px solid rgba(255, 0, 0, .3);
-}
-
 
 
 

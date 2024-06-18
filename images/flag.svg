@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="50px" height="51px" viewBox="0 0 50 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>路徑 2</title>
-    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="列表頁面" transform="translate(-501, -839)" fill="#BB1919">
-            <g id="群組-5" transform="translate(225, 830)">
-                <g id="群組-4" transform="translate(276.7572, 9)">
-                    <path d="M0,0 C0,0 9.39297125,0 28.1789137,0 L28.1789137,28 L14.0894569,20.8893294 C4.69648562,25.6297765 0,28 0,28 C0,28 0,0 0,0 Z" id="路徑-2"></path>
-                </g>
+    <g id="0607-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="400_01單券單店-詳細頁面" transform="translate(-1166, -606)" fill="#D0995A">
+            <g id="群組-4" transform="translate(1166, 606)">
+                <path d="M0,0 C0,0 16.6666667,0 50,0 L50,51 L25,38.0484213 C8.33333333,46.6828071 0,51 0,51 C0,51 0,0 0,0 Z" id="路徑-2"></path>
             </g>
         </g>
     </g>

@@ -27,14 +27,21 @@
       <div class="container-fluid">
         <div class="row justify-content-between align-items-center">
           <div class="col-4">
-            <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/" class="social-font h-arrow">
+            <!-- 有登入的話，記得要把這個打開 -->
+            <!-- <button  class="bg-white social-font h-arrow">
               <i class="bi bi-chevron-left"></i>
-            </a>
+            </button> -->
           </div>
-          <div class="col-4 text-center"><img src="images/logo.svg" class="logoboxs"></div>
-          <div class="col-4">
+          <div class="col-4 text-center">
+            <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/"><img src="images/logo.svg" class="logoboxs"></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <!-- member -->
+            <a href="" class="float-end me-xl-3 me-2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/icon-member.svg"  class="h-iconboxs"></a>
+            <!-- search -->
+            <a class="float-end me-xl-3 me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" ><img src="images/icon-search.svg" class="mob-serach"></a>
+            <!-- qa -->
             <a href="qa.html" class="float-end"><img src="images/icon-qa.svg"  class="h-iconboxs"></a>
-            <a href="" class="float-end me-3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/icon-member.svg"  class="h-iconboxs"></a>
           </div>
         </div>
       </div>
@@ -56,7 +63,7 @@
     <!-- mobile topBoxs -->
     <div class="mobile-open w-100">
       <div class="mobile-header">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-12">
               <a href="index-login.html" class="text-white fs-6">
@@ -66,14 +73,14 @@
             <div class="col-12">
               <h3 class="text-white mb-0 ms-3">優惠搜尋</h3>
             </div>
-            <!-- <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div> -->
+            <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
     <!-- web topBoxs -->
-    <div class="topboxs py-4 mobile-close">
+    <!-- <div class="topboxs py-4 mobile-close">
       <div class="mainboxs w990 container-fluid px-0">
         <div class="row mx-auto align-items-center">
           <div class="col-12 px-0">
@@ -84,42 +91,40 @@
           <div class="col-12 px-0">
             <h3 class="mb-0 ms-3">優惠搜尋</h3>
           </div>
-          <!-- <div class="col-auto">
+          <div class="col-auto">
             <a><img src="images/search-icon.svg"></a>
-          </div> -->
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <main class="mainboxs w990 mt-lg-5 mt-3">
       <div class="container-fluid px-lg-0 px-3">
         <div class="row">
           <div class="col-12 searchText mb-3">您的搜尋結果</div>
           <div class="col-12 mb-lg-5 mb-4">
-            <span class="badge label-text fs-5 mx-2">標籤一</span>
-            <span class="badge label-text fs-5 me-2">標籤二</span>
-            <span class="badge label-text fs-5">標籤三 </span>
+            <span class="badge label-text fs-6 mx-2">標籤一</span>
+            <span class="badge label-text fs-6 me-2">標籤二</span>
+            <span class="badge label-text fs-6">標籤三 </span>
           </div>
+
           <!-- 01 -->
           <div class="col-sm-4 mb-4">
             <div class="card">
               <div class="position-relative">
                 <div class="position-absolute flagBoxs">限量</div>
-                <div class="position-absolute bottom-0 start-0 titleboxs">
-                  <span class="title-text">Oh my!原燒</span>
-                </div>
                 <img src="images/pic01.png" class="card-img-top">
               </div>
               <div class="card-body">
-                <p class="card-text mb-0">優惠品項：</p>
-                <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
 
-                <div class="mb-2">
+                <!-- <div class="mb-2">
                   <span class="badge label-text me-2">標籤一</span>
                   <span class="badge label-text">標籤二</span>
-                </div>
+                </div> -->
 
-                <p class="card-text cupon-text">內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
                 </p>
 
                 <div class="f9 mb-3 text-black-50">
@@ -129,7 +134,7 @@
                 <div class="container-fluid overflow-hidden px-0">
                   <div class="row gx-2">
                     <div class="col-12">
-                      <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -141,29 +146,20 @@
             <div class="card">
               <div class="position-relative">
                 <div class="position-absolute flagBoxs">限量</div>
-                <div class="position-absolute bottom-0 start-0 titleboxs">
-                  <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                </div>
                 <img src="images/pic02.png" class="card-img-top">
               </div>
-
               <div class="card-body">
-                <p class="card-text mb-0">優惠品項：</p>
-                <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
 
-                <div class="mb-2">
-                  <!-- 標籤不要超過五個 -->
+                <!-- <div class="mb-2">
                   <span class="badge label-text me-2">標籤一</span>
-                  <span class="badge label-text me-2">標籤二</span>
-                  <span class="badge label-text me-2">標籤二</span>
-                  <span class="badge label-text me-2">標籤二</span>
                   <span class="badge label-text">標籤二</span>
-                </div>
+                </div> -->
 
-                <p class="card-text cupon-text">
-                  內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
                 </p>
-                
+
                 <div class="f9 mb-3 text-black-50">
                   <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
                 </div>
@@ -171,7 +167,7 @@
                 <div class="container-fluid overflow-hidden px-0">
                   <div class="row gx-2">
                     <div class="col-12">
-                      <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -182,24 +178,21 @@
           <div class="col-sm-4 mb-4">
             <div class="card">
               <div class="position-relative">
-                <div class="position-absolute flagBoxs">限量</div>
-                <div class="position-absolute bottom-0 start-0 titleboxs">
-                  <span class="title-text">ARASHI Anniversary Tour 5x20 FILM： Record of Memories</span>
-                </div>
+                <!-- <div class="position-absolute flagBoxs">限量</div> -->
                 <img src="images/pic03.png" class="card-img-top">
               </div>
               <div class="card-body">
-                <p class="card-text mb-0">優惠品項：</p>
-                <h5 class="card-title text-primary">03. 單券多店 - 電影（共用）</h5>
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
 
-                <div class="mb-2">
+                <!-- <div class="mb-2">
                   <span class="badge label-text me-2">標籤一</span>
                   <span class="badge label-text">標籤二</span>
-                </div>
-                <p class="card-text cupon-text">
-                內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙
+                </div> -->
+
+                <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
                 </p>
-                
+
                 <div class="f9 mb-3 text-black-50">
                   <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
                 </div>
@@ -207,7 +200,7 @@
                 <div class="container-fluid overflow-hidden px-0">
                   <div class="row gx-2">
                     <div class="col-12">
-                      <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -218,23 +211,19 @@
           <div class="col-sm-4 mb-4">
             <div class="card">
               <div class="position-relative">
-                <div class="position-absolute flagBoxs">限量</div>
-                <div class="position-absolute bottom-0 start-0 titleboxs">
-                  <span class="title-text">Oh my!原燒</span>
-                </div>
-                <img src="images/pic01.png" class="card-img-top">
+                <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                <img src="images/pic04.png" class="card-img-top">
               </div>
               <div class="card-body">
-                <p class="card-text mb-0">優惠品項：</p>
-                <h5 class="card-title text-primary">01. 單券單店-單獨提供</h5>
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
 
-                <div class="mb-2">
+                <!-- <div class="mb-2">
                   <span class="badge label-text me-2">標籤一</span>
                   <span class="badge label-text">標籤二</span>
-                </div>
+                </div> -->
 
-                <p class="card-text cupon-text">
-                內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優惠：①訂購外帶餐盒，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，內用優惠：消費多人套餐，
+                <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
                 </p>
 
                 <div class="f9 mb-3 text-black-50">
@@ -244,7 +233,7 @@
                 <div class="container-fluid overflow-hidden px-0">
                   <div class="row gx-2">
                     <div class="col-12">
-                      <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -255,27 +244,19 @@
           <div class="col-sm-4 mb-4">
             <div class="card">
               <div class="position-relative">
-                <div class="position-absolute flagBoxs">限量</div>
-                <div class="position-absolute bottom-0 start-0 titleboxs">
-                  <span class="title-text">孤單又燦爛的神—鬼怪</span>
-                </div>
-                <img src="images/pic02.png" class="card-img-top">
+                <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                <img src="images/pic05.png" class="card-img-top">
               </div>
               <div class="card-body">
-                <p class="card-text mb-0">優惠品項：</p>
-                <h5 class="card-title text-primary">02. 單券多店 - 電影（各自）</h5>
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
 
-                <div class="mb-2">
-                  <!-- 標籤不要超過五個 -->
+                <!-- <div class="mb-2">
                   <span class="badge label-text me-2">標籤一</span>
-                  <span class="badge label-text me-2">標籤二</span>
-                  <span class="badge label-text me-2">標籤二</span>
-                  <span class="badge label-text me-2">標籤二</span>
                   <span class="badge label-text">標籤二</span>
-                </div>
+                </div> -->
 
-                <p class="card-text cupon-text">
-                  內用優惠：消費多人套餐，即贈「海陸雙拼(嚴選雪花板腱牛+草蝦)」乙份(價值284元)來店自取優
+                <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
                 </p>
 
                 <div class="f9 mb-3 text-black-50">
@@ -285,7 +266,40 @@
                 <div class="container-fluid overflow-hidden px-0">
                   <div class="row gx-2">
                     <div class="col-12">
-                      <a href="#" class="w-100 btn btn-black">詳細資訊</a>
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 06 -->
+          <div class="col-sm-4 mb-4">
+            <div class="card">
+              <div class="position-relative">
+                <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                <img src="images/pic06.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                <!-- <div class="mb-2">
+                  <span class="badge label-text me-2">標籤一</span>
+                  <span class="badge label-text">標籤二</span>
+                </div> -->
+
+                <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                </p>
+
+                <div class="f9 mb-3 text-black-50">
+                  <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                </div>
+
+                <div class="container-fluid overflow-hidden px-0">
+                  <div class="row gx-2">
+                    <div class="col-12">
+                      <a href="#" class="w-100 btn btn-black">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -299,7 +313,7 @@
     <footer class="my-5">
       <hr class="my-4">
       <div class="container-fluid">
-        <div class="row align-items-center">
+        <!-- <div class="row align-items-center">
           <div class="col-lg-6 col-12 text-lg-start text-center">
             <a href="https://www.instagram.com/lexus_taiwan/?hl=zh-tw" class="social-font me-3" target="_blank">
               <i class="fab fa-instagram"></i>
@@ -310,9 +324,9 @@
             <a href="https://www.youtube.com/user/LEXUSTaiwanchannel" class="social-font" target="_blank">
               <i class="fab fa-youtube"></i>
             </a>
-          </div>
-          <div class="col-lg-6 col-12 text-lg-end text-center my-lg-0 my-4">
-            <a href="https://discoverlexus.com/" class="footerlink" target="_blank">全球LEXUS</a>
+          </div> -->
+          <div class="col-12 text-lg-end text-center my-lg-0 my-4">
+            <a href="https://www.lexus.com.tw/" class="footerlink" target="_blank">LEXUS官網</a>
             <a href="https://www.lexus.com.tw/privacy.aspx" class="footerlink" target="_blank">隱私權條款</a>
           </div>
           <div class="col-12 text-lg-end text-center f13">© HOTAI MOTOR CO.,LTD. ALL RIGHTS RESERVED.   和泰汽車股份有限公司 03251108</div>

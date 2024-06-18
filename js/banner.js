@@ -28,7 +28,7 @@ $(function () {
     },
     breakpoints: {
       1024: {
-        slidesPerView: 7,
+        slidesPerView: 6,
       }, 
     },
     // on: {

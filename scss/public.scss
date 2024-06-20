@@ -74,7 +74,7 @@ body {
 
   // font: normal 14px/20px "新細明體";
   font-family:"nbk", "microsoft yahei","微軟正黑體",arial,sans-serif;
-  font-family:"nbk", "微軟正黑體",arial,sans-serif;
+  // font-family:"nbk", "微軟正黑體",arial,sans-serif;
   line-height: 26px;
 
   text-size-adjust: none;
@@ -294,28 +294,36 @@ hr {
 }
 
 .offcanvas-top {
-  height: 16vh !important;
+  height: 185px !important;
   // top: 665px;
 
+  // @include media-breakpoint-down(lg) {
+  //   height: 442px !important;
+  // }
+
   @include range-width(935px, 1200px) {
-    height: 30vh !important;
+    height: 442px !important;
+  }
+
+  @include range-width(935px, 1200px) {
+    height: 442px !important;
   }
 
   @include range-width(770px, 935px) {
-    height: 65vh !important;
+    height: 310px !important;
   }
 
   @include range-width(415px, 770px) {
-    height: 50vh !important;
+    height: 315px !important;
   }
 
-  @include range-width(375px, 415px) {
-    height: 50vh !important;
+  @include range-width(376px, 415px) {
+    height: 444px !important;
   }
 
-  @include range-width(0, 375px) {
+  @include range-width(0, 376px) {
     // top: 155px;
-    height: 65vh !important;
+    height: 442px !important;
   }
 }
 

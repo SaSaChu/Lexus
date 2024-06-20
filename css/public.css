@@ -3017,7 +3017,7 @@ textarea.form-control-lg { min-height: calc(1.5em + (1rem + 2px)); }
 
 html { font-size: 14px; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #000; font-family: "nbk", "microsoft yahei","微軟正黑體",arial,sans-serif; font-family: "nbk", "微軟正黑體",arial,sans-serif; line-height: 26px; text-size-adjust: none; -webkit-text-size-adjust: none; background-color: white; }
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #000; font-family: "nbk", "microsoft yahei","微軟正黑體",arial,sans-serif; line-height: 26px; text-size-adjust: none; -webkit-text-size-adjust: none; background-color: white; }
 
 a { cursor: pointer; text-decoration: none !important; }
 a:after, a:before { vertical-align: top !important; }
@@ -3076,12 +3076,13 @@ hr { color: #adb5bd; opacity: 1; }
 
 .form-control:focus { border-color: #ced4da !important; box-shadow: 0 0 0 0rem rgba(1, 126, 255, 0.25) !important; }
 
-.offcanvas-top { height: 16vh !important; }
-@media screen and (max-width: 1199px) and (min-width: 935px) { .offcanvas-top { height: 30vh !important; } }
-@media screen and (max-width: 934px) and (min-width: 770px) { .offcanvas-top { height: 65vh !important; } }
-@media screen and (max-width: 769px) and (min-width: 415px) { .offcanvas-top { height: 50vh !important; } }
-@media screen and (max-width: 414px) and (min-width: 375px) { .offcanvas-top { height: 50vh !important; } }
-@media screen and (max-width: 374px) and (min-width: 0) { .offcanvas-top { height: 65vh !important; } }
+.offcanvas-top { height: 185px !important; }
+@media screen and (max-width: 1199px) and (min-width: 935px) { .offcanvas-top { height: 442px !important; } }
+@media screen and (max-width: 1199px) and (min-width: 935px) { .offcanvas-top { height: 442px !important; } }
+@media screen and (max-width: 934px) and (min-width: 770px) { .offcanvas-top { height: 310px !important; } }
+@media screen and (max-width: 769px) and (min-width: 415px) { .offcanvas-top { height: 315px !important; } }
+@media screen and (max-width: 414px) and (min-width: 376px) { .offcanvas-top { height: 444px !important; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .offcanvas-top { height: 442px !important; } }
 
 .offcanvas-body { overflow-y: unset !important; }
 

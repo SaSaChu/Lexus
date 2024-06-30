@@ -3038,7 +3038,7 @@ hr { color: #adb5bd; opacity: 1; }
 .mobile-open { display: none !important; }
 @media screen and (max-width: 769px) and (min-width: 0) { .mobile-open { display: inline-block !important; } }
 
-.swiper { width: 100%; height: 485px; }
+.swiper { width: 100%; }
 
 .swiper-slide { text-align: center; font-size: 18px; display: flex; justify-content: center; align-items: center; }
 .swiper-slide img { display: block; width: 100%; height: 100%; object-fit: cover; }

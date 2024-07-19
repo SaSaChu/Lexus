@@ -29,6 +29,7 @@
       <div class="container-fluid">
         <div class="row justify-content-between align-items-center">
           <div class="col-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loadingModal">Loading BTN</button>
             <!-- 有登入的話，記得要把這個打開 -->
             <!-- <button  class="bg-white social-font h-arrow">
               <i class="bi bi-chevron-left"></i>
@@ -1519,6 +1520,27 @@
       </div>
     </footer>
 
+    <!-- loading光箱 -->
+    <div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <!-- <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loadingModalLabel">3222Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
 
     <!-- 登入光箱 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -863,6 +863,20 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-
-
+.copy-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  fill: #0f5232;
+  margin-left: 10px;
+}
+.copy-icon:hover {
+  fill: #0f5232;
+}
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1055;
+}
 

@@ -2764,8 +2764,16 @@
 
                                   <div class="container-fluid overflow-hidden px-0">
                                     <div class="row gx-2">
-                                      <div class="col-12">
-                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      <div class="col-12 alert alert-secondary py-1 d-flex justify-content-between align-items-center mb-0" role="alert">
+                                        <div>
+                                          <strong>專屬優惠序號：</strong>
+                                          <span id="promo-code">Q513311199800231</span>
+                                        </div>
+                                        <!-- 複製 SVG icon -->
+                                        <svg id="copy-icon" class="copy-icon" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 16" title="複製優惠碼">
+                                          <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                                        </svg>
                                       </div>
                                     </div>
                                   </div>
@@ -3617,9 +3625,6 @@
       </div>
     </div>
 
-
-
-
     
     <footer class="my-5">
       <hr class="my-4">
@@ -3644,6 +3649,32 @@
         </div>
       </div>
     </footer>
+
+    <!-- 複製成功的提示 -->
+    <div class="toast-container position-fixed top-50">
+      <div id="copy-toast" class="toast text-bg-success border-0" role="alert">
+        <div class="d-flex">
+          <div class="toast-body fs-5">
+            優惠碼已複製！
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 複製行為 -->
+    <script>
+      document.getElementById("copy-icon").addEventListener("click", function () {
+        const code = document.getElementById("promo-code").textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          const toastEl = document.getElementById("copy-toast");
+          const toast = new bootstrap.Toast(toastEl);
+          toast.show();
+        }).catch(err => {
+          alert("複製失敗：" + err);
+        });
+      });
+    </script>
 
     <!-- 登入光箱 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

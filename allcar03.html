@@ -59,10 +59,10 @@
             <p class="modusText mb-1 fs-5"><i class="fa-solid fa-caret-right text-black-50 align-baseline me-2"></i>適用對象：</p>
             <p class="modusTextDetailed f16 ps-4">Lexus 車主尊榮回饋方案全級別會員。</p>
           </div>
-          <div class="col-12 mb-4">
+          <!-- <div class="col-12 mb-4">
             <p class="modusText mb-1 fs-5"><i class="fa-solid fa-caret-right text-black-50 align-baseline me-2"></i>優惠序號：</p>
             <p class="modusTextDetailed f16 ps-4">Q513311199800231</p>
-          </div>
+          </div> -->
           <div class="col-12 mb-4">
             <p class="modusText mb-1 fs-5"><i class="fa-solid fa-caret-right text-black-50 align-baseline me-2"></i>優惠內容：</p>
             <p class="modusTextDetailed f16 ps-4">
@@ -97,12 +97,24 @@
 
       <div class="container-fluid overflow-hidden px-lg-0 px-3">
         <div class="row gx-2">
-          <div class="col-12">
+          <!-- <div class="col-12">
             <a href="use01.html" class="w-100 btn btn-black">立即使用</a>
-          </div>
+          </div> -->
           <!-- <div class="col-6">
             <a href="#" class="w-100 btn btn-black">領取優惠劵</a>
           </div> -->
+          <div class="col-12 alert alert-secondary d-flex justify-content-between align-items-center" role="alert">
+            <div>
+              <strong>專屬優惠序號：</strong>
+              <span id="promo-code">Q513311199800231</span>
+            </div>
+            <!-- 複製 SVG icon -->
+            <svg id="copy-icon" class="copy-icon" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 16 16" title="複製優惠碼">
+              <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+            </svg>
+          </div>
+
         </div>
       </div>
     </main>
@@ -110,18 +122,6 @@
     <footer class="my-5">
       <hr class="my-4">
       <div class="container-fluid">
-        <!-- <div class="row align-items-center">
-          <div class="col-lg-6 col-12 text-lg-start text-center">
-            <a href="https://www.instagram.com/lexus_taiwan/?hl=zh-tw" class="social-font me-3" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/lexus.tw?ref=ts&fref=ts" class="social-font me-3" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.youtube.com/user/LEXUSTaiwanchannel" class="social-font" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div> -->
           <div class="col-12 text-lg-end text-center my-lg-0 my-4">
             <a href="https://www.lexus.com.tw/" class="footerlink" target="_blank">LEXUS官網</a>
             <a href="https://www.lexus.com.tw/privacy.aspx" class="footerlink" target="_blank">隱私權條款</a>
@@ -131,7 +131,32 @@
       </div>
     </footer>
 
-    
+    <!-- 複製成功的提示 -->
+    <div class="toast-container position-fixed top-50">
+      <div id="copy-toast" class="toast text-bg-success border-0" role="alert">
+        <div class="d-flex">
+          <div class="toast-body fs-5">
+            優惠碼已複製！
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 複製行為 -->
+    <script>
+      document.getElementById("copy-icon").addEventListener("click", function () {
+        const code = document.getElementById("promo-code").textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          const toastEl = document.getElementById("copy-toast");
+          const toast = new bootstrap.Toast(toastEl);
+          toast.show();
+        }).catch(err => {
+          alert("複製失敗：" + err);
+        });
+      });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"

@@ -2,9 +2,9 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>優惠碼複製功能</title>
+  <title>複製優惠碼區塊</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5 -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .copy-icon {
@@ -12,7 +12,6 @@
       width: 24px;
       height: 24px;
       fill: #0d6efd;
-      margin-left: 10px;
     }
     .copy-icon:hover {
       fill: #0a58ca;
@@ -27,17 +26,34 @@
 </head>
 <body class="p-4">
 
-  <!-- 初始按鈕 -->
-  <div id="promo-container">
-    <button class="btn btn-primary" id="show-code-btn">點我領取優惠碼</button>
+  <!-- 資訊區塊 -->
+  <div class="alert alert-info d-flex justify-content-between align-items-center" role="alert">
+    <div>
+      <strong>專屬優惠序號：</strong>
+      <span id="promo-code">Q12345678901111</span>
+    </div>
+    <!-- 複製 SVG icon -->
+    <svg id="copy-icon" class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" title="複製優惠碼">
+      <path pointer-events="none" d="M10 1.5a.5.5 0 0 1 .5.5v1H11a2 2 0 0 1 2 
+      2v6a2 2 0 0 1-2 2h-1v.5a.5.5 0 0 1-1 
+      0V13H6v.5a.5.5 0 0 1-1 
+      0V13H4a2 2 0 0 1-2-2V5a2 2 0 0 1 
+      2-2h1V2a.5.5 0 0 1 1 0v1h4V2a.5.5 0 0 1 
+      .5-.5zM4 4a1 1 0 0 0-1 1v6a1 1 0 0 0 
+      1 1h1v-1a.5.5 0 0 1 1 
+      0v1h4v-1a.5.5 0 0 1 1 
+      0v1h1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-1v1a.5.5 
+      0 0 1-1 0V4H6v1a.5.5 0 0 1-1 
+      0V4H4z"/>
+    </svg>
   </div>
 
-  <!-- Bootstrap Toast 用於複製成功提示 -->
-  <div class="toast-container position-fixed top-0 end-0 p-3">
-    <div id="copy-toast" class="toast align-items-center text-bg-success border-0" role="alert">
+  <!-- 複製成功的提示 -->
+  <div class="toast-container">
+    <div id="copy-toast" class="toast text-bg-success border-0" role="alert">
       <div class="d-flex">
         <div class="toast-body">
-          優惠碼已複製！
+          ✅ 優惠碼已複製！
         </div>
         <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
       </div>
@@ -47,46 +63,16 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JavaScript 行為邏輯 -->
+  <!-- 複製行為 -->
   <script>
-    const promoCode = "Q12345678901111";
-
-    document.getElementById("show-code-btn").addEventListener("click", function () {
-      const html = `
-        <div class="alert alert-success d-flex align-items-center justify-content-between" role="alert">
-          <div>
-            <strong>專屬優惠序號：</strong>
-            <span id="promo-code">${promoCode}</span>
-          </div>
-          <svg id="copy-icon" class="copy-icon" xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 16 16" title="複製優惠碼">
-            <path pointer-events="none" d="M10 1.5a.5.5 0 0 1 .5.5v1H11a2 2 0 0 1 2 
-            2v6a2 2 0 0 1-2 2h-1v.5a.5.5 0 0 1-1 
-            0V13H6v.5a.5.5 0 0 1-1 
-            0V13H4a2 2 0 0 1-2-2V5a2 2 0 0 1 
-            2-2h1V2a.5.5 0 0 1 1 0v1h4V2a.5.5 0 0 1 
-            .5-.5zM4 4a1 1 0 0 0-1 1v6a1 1 0 0 0 
-            1 1h1v-1a.5.5 0 0 1 1 
-            0v1h4v-1a.5.5 0 0 1 1 
-            0v1h1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-1v1a.5.5 
-            0 0 1-1 0V4H6v1a.5.5 0 0 1-1 
-            0V4H4z"/>
-          </svg>
-        </div>
-      `;
-      document.getElementById("promo-container").innerHTML = html;
-
-      const copyIcon = document.getElementById("copy-icon");
-
-      // 綁定複製事件
-      copyIcon.addEventListener("click", function () {
-        navigator.clipboard.writeText(promoCode).then(() => {
-          const toastEl = document.getElementById('copy-toast');
-          const toast = new bootstrap.Toast(toastEl);
-          toast.show();
-        }).catch((err) => {
-          alert("複製失敗：" + err);
-        });
+    document.getElementById("copy-icon").addEventListener("click", function () {
+      const code = document.getElementById("promo-code").textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const toastEl = document.getElementById("copy-toast");
+        const toast = new bootstrap.Toast(toastEl);
+        toast.show();
+      }).catch(err => {
+        alert("複製失敗：" + err);
       });
     });
   </script>
